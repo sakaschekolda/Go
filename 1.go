@@ -10,5 +10,5 @@ func main() {
 
 	formattedTime := currentTime.Format("02-01-2006 15:04:05")
 
-	fmt.Println("Текущая дата и время:", formattedTime)
+	fmt.Println("Date and time now:", formattedTime)
 }
