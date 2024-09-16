@@ -1,0 +1,39 @@
+package main
+
+import "fmt"
+
+func main() {
+	// Объявление двух целых переменных
+	var num1, num2 int
+
+	// Ввод значений от пользователя
+	fmt.Print("Введите первое целое число: ")
+	fmt.Scan(&num1)
+	fmt.Print("Введите второе целое число: ")
+	fmt.Scan(&num2)
+
+	// Выполнение арифметических операций
+	sum := num1 + num2
+	difference := num1 - num2
+	Multiplication := num1 * num2
+	// Проверка на деление на ноль для num1
+	if num1 != 0 {
+		quotient2 := float64(num2) / float64(num1) // num2 / num1
+		fmt.Printf("Деление num2 / num1: %d / %d = %.2f\n", num2, num1, quotient2)
+	} else {
+		fmt.Println("Ноль нельзя делить")
+	}
+
+	// Проверка на деление на ноль для num2
+	if num2 != 0 {
+		quotient1 := float64(num1) / float64(num2) // num1 / num2
+		fmt.Printf("Частное num1 / num2: %d / %d = %.2f\n", num1, num2, quotient1)
+	} else {
+		fmt.Println("Нельзя делить на ноль")
+	}
+
+	// Вывод результатов на экран
+	fmt.Printf("Сумма: %d + %d = %d\n", num1, num2, sum)
+	fmt.Printf("Разность: %d - %d = %d\n", num1, num2, difference)
+	fmt.Printf("Произведение: %d * %d = %d\n", num1, num2, Multiplication)
+}
