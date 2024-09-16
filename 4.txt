@@ -7,9 +7,9 @@ func main() {
 	var num1, num2 int
 
 	// Ввод значений от пользователя
-	fmt.Print("Введите первое целое число: ")
+	fmt.Print("Enter 1st integer: ")
 	fmt.Scan(&num1)
-	fmt.Print("Введите второе целое число: ")
+	fmt.Print("Enter 2nd integer: ")
 	fmt.Scan(&num2)
 
 	// Выполнение арифметических операций
@@ -19,21 +19,21 @@ func main() {
 	// Проверка на деление на ноль для num1
 	if num1 != 0 {
 		quotient2 := float64(num2) / float64(num1) // num2 / num1
-		fmt.Printf("Деление num2 / num1: %d / %d = %.2f\n", num2, num1, quotient2)
+		fmt.Printf("Divide num2 / num1: %d / %d = %.2f\n", num2, num1, quotient2)
 	} else {
-		fmt.Println("Ноль нельзя делить")
+		fmt.Println("Can't divide by zero")
 	}
 
 	// Проверка на деление на ноль для num2
 	if num2 != 0 {
 		quotient1 := float64(num1) / float64(num2) // num1 / num2
-		fmt.Printf("Частное num1 / num2: %d / %d = %.2f\n", num1, num2, quotient1)
+		fmt.Printf("division num1 / num2: %d / %d = %.2f\n", num1, num2, quotient1)
 	} else {
-		fmt.Println("Нельзя делить на ноль")
+		fmt.Println("Can't divide by zero")
 	}
 
 	// Вывод результатов на экран
-	fmt.Printf("Сумма: %d + %d = %d\n", num1, num2, sum)
-	fmt.Printf("Разность: %d - %d = %d\n", num1, num2, difference)
-	fmt.Printf("Произведение: %d * %d = %d\n", num1, num2, Multiplication)
+	fmt.Printf("Summary: %d + %d = %d\n", num1, num2, sum)
+	fmt.Printf("Difference: %d - %d = %d\n", num1, num2, difference)
+	fmt.Printf("Multiplication: %d * %d = %d\n", num1, num2, Multiplication)
 }
