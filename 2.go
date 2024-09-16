@@ -8,8 +8,8 @@ func main() {
 	var stringVar string = "Hello world"
 	var boolVar bool = true
 
-	fmt.Println("Целочисленное значение:", integerVar)
-	fmt.Println("Число с плавающей запятой:", floatVar)
-	fmt.Println("Строка:", stringVar)
-	fmt.Println("Логическое значение:", boolVar)
+	fmt.Println("Integer:", integerVar)
+	fmt.Println("Float:", floatVar)
+	fmt.Println("String:", stringVar)
+	fmt.Println("Bool:", boolVar)
 }
